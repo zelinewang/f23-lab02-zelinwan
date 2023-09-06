@@ -5,5 +5,3 @@ function circle(radius: number): Shape {
         }
     }
 }
-
-export { circle }
