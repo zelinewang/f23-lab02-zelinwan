@@ -1,6 +1,6 @@
 import { newRenderer } from "./renderer.js"
+import { newRectangle } from "./shapes/rectangle.js"
 
-const height = 2
-const width = 3
-const renderer = newRenderer(height, width)
+const rectangle = newRectangle(2, 3)
+const renderer = newRenderer(rectangle)
 renderer.draw();

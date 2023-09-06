@@ -7,3 +7,5 @@ function square(sideLen: number): Shape {
         }
     }
 }
+
+export { square }

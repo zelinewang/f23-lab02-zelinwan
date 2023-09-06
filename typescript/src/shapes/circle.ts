@@ -1,3 +1,5 @@
+import { Shape } from "./shape.js";
+
 function circle(radius: number): Shape {
     return {
         computeArea: function (): number {
@@ -5,3 +7,5 @@ function circle(radius: number): Shape {
         }
     }
 }
+
+export { circle }
