@@ -8,6 +8,6 @@ public class Circle implements Shape {
     }
 
     public double getArea() {
-        return Math.PI * radius * radius;
+        return Math.PI * radius * radius * 0.5;
     }
 }
