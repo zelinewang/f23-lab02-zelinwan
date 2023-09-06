@@ -1,16 +1,23 @@
 package edu.cmu.cs.cs214.lab02;
 
-import edu.cmu.cs.cs214.lab02.shapes.Rectangle;
+import edu.cmu.cs.cs214.lab02.shapes.Shape;
 
 public class Renderer {
-    private Rectangle rectangle;
+    private Shape shape;
     
-    Renderer(double height, double width) {
-        this.rectangle = new Rectangle(height, width);
+    // Renderer(double height, double width) {
+    //     this.rectangle = new Rectangle(height, width);
+    // }
+
+    // BUT WHAT IF you want to render other shapes? 
+    // make Renderer a class using all the shapes! use the INTERFACE!!
+    
+    Renderer(Shape shape) {
+        this.shape = shape;
     }
 
     void draw() {
-        double area = rectangle.getArea();
+        double area = shape.getArea();
 
         // assume implementation
 
