@@ -1,3 +1,5 @@
+import { Shape } from "./shape.js";
+
 function square(sideLen: number): Shape {
     return {
         computeArea: function (): number {
